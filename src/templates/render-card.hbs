@@ -1,0 +1,21 @@
+{{#each this}}
+  <article class='render-card'>
+    <a href='{{largeImageURL}}' target='_blank'>
+      <img src='{{webformatURL}}' alt='{{tags}}' class='render-card__image' />
+    </a>
+    <div class='render-card__info'>
+      <p class='render-card__text-info'>Likes:
+        {{likes}}
+      </p>
+      <p class='render-card__text-info'>Views:
+        {{views}}
+      </p>
+      <p class='render-card__text-info'>Comments:
+        {{comments}}
+      </p>
+      <p class='render-card__text-info'>Downloads:
+        {{downloads}}
+      </p>
+    </div>
+  </article>
+{{/each}}
